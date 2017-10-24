@@ -24,7 +24,7 @@ public class InputOutputGui {
             lastName = nameService.extractLastName(fullName);
             msg = "Based on your input, Your last name should be: " + lastName;
         } catch (IllegalArgumentException iae) {
-            msg = iae.getMessage() + " please try again";
+            msg = iae.getMessage();
         }
         JOptionPane.showMessageDialog(null, msg);
     }
